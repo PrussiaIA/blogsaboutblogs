@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/penguin.jpg" type="image/x-icon"> 
+        <title>Blogs about Blogs</title>
+        <meta charset=“utf-8”>
+    </head>
+    <header>
+        <div class="home-content">
+            <h1>Contact Us</h1>
+            <div class="menu">
+                <img src="./images/icon.gif" alt="Menu" width="50" height="50" style="margin-top: 10px;">
+                <div class="navbar">
+                    <a href="./index.html">Home</a>
+                    <a href="./AboutUs.html">About</a>
+                    <a href="./Contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="container"> 
+            <h1 class="titles contact-h1">Come Meet Us and Gain New Knowledge!</h1>        
+            
+            <div class="form-container">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name">
+                </div>
+        
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email">
+                </div>
+        
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </body>
+    <footer class="copyright-footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
+            <h3 style="margin-left: 50px;">&copy Copyright! @2023 Blogs about blogs. All rights reserved.</h3>
+        </div>
+    </footer>
+    <script>
+      // Form becomes usable but is not connected to jQuery to store data
+      const form = document.getElementById('contactForm');
+      
+      // Validation to make sure it isn't blank
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        // Keeps the values 
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+  
+        // Console displays the data
+        console.log('Submitted Data:');
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Message:', message);
+  
+        // This action will reset the form
+        form.reset();
+      });
+    </script>
+  </body>
+</html>

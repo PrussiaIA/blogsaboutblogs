@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/penguin.jpg" type="image/x-icon"> 
+        <title>Blogs about Blogs</title>
+        <meta charset=“utf-8”>
+    </head>
+    <header>
+        <!-- Banner -->
+        <div class="home-content">
+            <h1>About Us</h1>
+            <div class="menu">
+                <img src="./images/icon.gif" alt="Menu" width="50" height="50" style="margin-top: 10px;">
+                <div class="navbar">
+                    <a href="./index.html">Home</a>
+                    <a href="./AboutUs.html">About</a>
+                    <a href="./Contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+    <!-- Banner -->
+    <figure>
+        <img class="About_img" alt="Write without fear and Edit without Mercy" src="./images/About_banner.jpg">
+        <figcaption class="About_img"><em>Do you fear the idea of infinite blogs?</em></figcaption>
+    </figure>
+    
+    <!-- Title and Content -->
+    <!-- Surprise hidden somewhere-->
+    <button onclick="changeBackgroundColor(targetElement)" style="background-color: transparent; color: transparent; opacity: 0.04; width: 100%;">Change Color</button>
+    <div id="targetElement">
+        <div class="container">
+            <h1 class="titles">What about us, huh??</h1>
+            <div class="section">
+                <h2 class="section-heading">Our Story</h2>
+             <p class="section-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo turpis nec metus auctor, sit amet eleifend dui varius. Donec tincidunt purus et nibh laoreet, eu tristique leo pharetra. Phasellus sed convallis nunc, et fermentum lorem. Duis malesuada metus non mauris eleifend, vitae ultricies justo vestibulum. Nunc at efficitur urna. Aliquam ut interdum felis. Sed sed odio et risus pulvinar tempor. Nulla lacinia mauris nec ex fringilla interdum.
+                </p>
+            </div>
+        
+            <div class="section">
+                <h2 class="section-heading">Our Team</h2>
+                <p class="section-content">
+                Integer commodo sollicitudin massa, vel rutrum nisl lacinia vitae. Vestibulum non purus id velit luctus tristique. Curabitur ultrices ipsum ac neque maximus, nec rutrum arcu efficitur. Sed at ipsum nec mi feugiat scelerisque. Sed faucibus est ac est consequat, at laoreet elit consectetur. Curabitur sit amet tincidunt massa, eget feugiat libero. Morbi ut orci nisl.
+                </p>
+            </div>
+    
+            <div class="section">
+                <h2 class="section-heading">Our Mission</h2>
+                <p class="section-content">
+                COME HEAR ABOUT US AT THE BLOG STORE OF THE WORLD FOR BLOGS AND WITH 
+                BLOGS ABOUT BLOGS THAT SILENCE OTHER BLOGS THAT BETRAY BLOGS
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer
+         Social site links open a separate blank page.
+    -->
+    <footer class="copyright-footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
+            <h3 style="margin-left: 50px;">&copy Copyright! @2023 Blogs about blogs. All rights reserved.</h3>
+        </div>
+    </footer>
+    <script>
+        // JavaScript code to change background color 
+        function changeBackgroundColor(element) {
+            var color = getRandomColor();
+            element.style.backgroundColor = color;
+        }
+    
+        // Random color
+        function getRandomColor() {
+            var red = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+
+            var color = "rgb(" + red + "," + green + "," + blue + ")";
+            return color;
+        }
+        onclick
+    </script>
+    </body>
+</html>
